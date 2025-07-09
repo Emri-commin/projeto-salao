@@ -1,6 +1,6 @@
 # 🌟 Nome do Projeto
 
-Este repositório documenta o desenvolvimento do site institucional do salão de beleza **Elly's Beauty**, criado totalmente com **JavaScript**, **HTML** e **CSS**.
+Este repositório documenta o desenvolvimento do site institucional do salão de beleza **Elly's**, criado totalmente com **JavaScript**, **HTML** e **CSS**.
 
 ---
 
