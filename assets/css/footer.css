@@ -13,32 +13,28 @@
     display: flex;
     justify-content: space-between;
     font-family:"Mona Sans", sans-serif;
-    gap: 50px;
+    gap: 70px;
     flex-wrap: wrap;
-    
-    
-   
 }
 #footer-container #footer-logo{
     width: 200px;
     height: 80px;  
 }
 
-#footer-text h3{
+#footer-atendimento h3{
    font-size: 22px;
-    font-weight: 500;
-    width: 300px;
-    line-height: 1.4; 
-    word-wrap: break-word;
+   font-weight: 500;
+   width: 1400px;
+   line-height: 1.4; 
+   padding-bottom: 20px;
+   word-wrap: break-word;
 
 }
-#footer-text p{
-    font-weight: 400;
-    font-size: 17px;
+#footer-atendimento p{
     font-size: 16px;
     width: 200px;
     word-wrap: break-word;
-    height: 10px;
+    height: 20px;
     
     
 }
@@ -49,6 +45,7 @@
     font-size: 22px;
     font-weight: 500;
     width: 300px;
+    padding-bottom: 20px;
     line-height: 1.4; 
     word-wrap: break-word;
 }
@@ -61,8 +58,6 @@
 }
 #especialidades{
     padding-top: 95px;
-    margin-right: 10px;
-    
 }
 #especialidades h3{
     font-size: 22px;
@@ -70,12 +65,14 @@
     width: 300px;
     line-height: 1.4; 
     word-wrap: break-word;
+    padding-bottom: 20px;
 }
 #lista{
     padding: 0;
 }
 #lista li {
   margin-bottom: 6px;
+  
 }
 #lista :hover{
     color: #d8b390; 

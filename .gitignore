@@ -1,0 +1,18 @@
+# Ignorar pasta de dependências do Node.js
+node_modules/
+
+# Ignorar arquivos com variáveis de ambiente e segredos
+.env
+.env.local
+
+# Ignorar arquivos de build e logs
+dist/
+build/
+*.log
+
+# Ignorar arquivos de cache e sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar pasta de configuração do VS Code (opcional, mas recomendado)
+.vscode/

@@ -109,7 +109,7 @@ Back- end Developer | Especialista em [sua stack]
 
 ## 🗂 Sobre este repositório
 
-- Este repositório contém o código-fonte completo do site institucional do salão de beleza Elly's Beauty, desenvolvido com HTML, CSS e JavaScript puro. Aqui você encontrará todos os arquivos necessários para rodar o site localmente ou para estudos.
+- Este repositório contém o código-fonte completo do site   institucional do salão de beleza Elly's, desenvolvido com HTML, CSS e JavaScript puro. Aqui você encontrará todos os arquivos necessários para rodar o site localmente ou para estudos.
 
 
 - Contém prints, identidade visual, estrutura e progresso.  
