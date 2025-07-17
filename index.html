@@ -4,109 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salão Ely`s</title>
-    <style>
-</style>
+    <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <header class="Header">
-        <img src="assets/img/banner/Banner.png" alt="banner-principal" class="Img-banner">
+<body id="tt">
+    <div class="sect-mobile" ></div>
 
-        <nav class="nav-bar">
-            <img src="" alt="" class="logo">
+    <header class="header">
+        <img src="assets/img/logo/logo.png" alt="">
+        <nav>
             <ul class="menu">
-                <li><a href="">INICIO</a>
-                <li><a href="">SOBRE NÓS</a></li>
-                <li><a href="">NOSSA EQUIPE</a></li>
-                <li><a href="">CONTATO</a></li>
+                <li><a class="nav-link" href="#tt">INICIO</a>
+                <li><a class="nav-link">SOBRE</a></li>
+                <li><a class="nav-link">EQUIPE</a></li>
+                <li><a class="nav-link">CONTATO</a></li>
             </ul>
         </nav>
-        
-        <button class="contato" href="">
-            <img src="assets/img/icons/whatsapp-logo.png" alt="icone-whatApp" width="20px" class="icon-whatshapp">
-            <a href="#" target="_blank" rel="noopener noreferrer"><span>Agendar horário</span></a>
-        </button>
-
-
-
-        <!--Seção Informativa-->
-
-        <section class="Container-section">
-            <div class="info">
-                <img src="assets/img/icons/unha.png" alt="icone-unha" width="50px">
-                <h3 class="att">Unhas</h3>
-                <p>Manicure e pedicure,<br> esmaltação em gel e nail <br> art.</p>
-            </div>
-            <div class="info">
-                <img src="assets/img/icons/secador-de-cabelo.png" alt="icone-secador" width="50px">
-                <h3>Cabelos</h3>
-                <p>Cortes modernos, <br> coloração personalizada <br>tratamentos capilares e <br>penteados especiais.
-                </p>
-            </div>
-            <div class="info">
-                <img src="assets/img/icons/sobrancelha.png" alt="icone-sobrancelhas" width="50px">
-                <h3>Estética</h3>
-                <p>Limpeza de pele, design<br>de sobrancelhas <br> depilação e maquiagem <br>profissional.</p>
-            </div>
-
-            <!--Quem somos-->
-
-        </section>
+        <button class="button-mobile"><img src="assets/img/icons/menu.png" alt=""></button>
     </header>
-    <section class="quem-somos">
-        <div class="container">
-            <h2 class="titulo-secao"> Quem somos</h2>
+    <img src="assets/img/banner/Banner.png" alt="" class="Img-banner">
 
-            <div class="text-descricao">
-                <p>Somos Ely's, um centro de beleza completo com mais de uma década de tradição e inovação.</p>
-                <p>
-                Somos especialistas em coloração, cortes, tratamentos capilares e visagismo.</p>
-                <p>
-                Atuamos com profissionais experientes, apaixonados pelo que fazem e comprometidos com resultados personalizados e impecáveis.</p>
-                <p>
-                Nosso compromisso é elevar a autoestima de cada cliente, com um atendimento que combina técnica, sensibilidade e os melhores produtos do mercado.</p>
-            </div>
+    <button class="contato" href="">
+        <img src="assets/img/icons/whatsapp-logo.png" alt="icone-whatApp" width="20px" class="icon-whatshapp">
+        <a  target="_blank" rel="noopener noreferrer"><span>Agendar horário</span></a>
+    </button>
+
+    <div class="Divmenu-mobile" id="menumo">
+        <ul>
+            <li id="inicios"> <img src="assets/img/icons/Inicio.png" width="10px"><a class="nav-link"
+                    href="#tt">INICIO</a></li>
+            <li id="sobre"> <img src="assets/img/icons/Sobre.png" width="10px"><a class="nav-link"
+                    href="#footer">INFO</a></li>
+            <li id="equipe"> <img src="assets/img/icons/Grupo.png" width="10px"><a class="nav-link"
+                    >EQUIPE</a></li>
+            <li id="contato"> <img src="assets/img/icons/Contato.png" width="10px"><a class="nav-link">CONTATO</a>
+            </li>
+            </li>
+        </ul>
+    </div>
+
+    <div class="Divmenu-mobile active" id="ativo">
+        <h1>Novidades em breve</h1>
+    </div>
+
+    <section class="Container-info" id="info">
+        <div class="info">
+            <img src="assets/img/icons/unha.png" alt="icone-unha" width="50px">
+
+            <h3 class="att">Unhas</h3>
+
+            <p>Manicure e pedicure, esmaltação em gel e nail art.</p>
+
         </div>
-             <img src="assets/img/galeria/image-cabelo.png" alt="imagem de corde de cabelo" width="400px" class="img-info">
-
+        <div class="info">
+            <img src="assets/img/icons/secador-de-cabelo.png" alt="icone-secador" width="50px">
+            <h3>Cabelos</h3>
+            <p>Cortes modernos, coloração personalizada tratamentos capilares e penteados especiais.
+            </p>
+        </div>
+        <div class="info">
+            <img src="assets/img/icons/sobrancelha.png" alt="icone-sobrancelhas" width="50px">
+            <h3>Estética</h3>
+            <p>Limpeza de pele, design de sobrancelhas depilação e maquiagem profissional.</p>
+        </div>
     </section>
 
-            <!--Footer-->
-            
-                <footer id="footer">
-                    <div id="footer-container">
-                        <div id="footer-logo">
-                            <img src="assets/img/logo/logo sem fundo.png" alt="Logo">
-                        <div id="footer-atendimento">
-                            <h3>Atendimento <br> 9h ás 18h <br> Terça a Sábado</h3>
-                            <p>Telefone: <a href="tel:+5581999999999">(81) 99999-9999</a></p>
-                            <p>Email: <a href="">salao@gmail.com</a></p>
-                        </div>
-                        </div>
+    <section class="quem-somos">
 
-                        <div id="endereco">
-                            <h3>Endereço</h3>
-                            <p>Av. Bernado vieira de Melo, <br> n&deg.4099, Piedade - <br>Jaboatão dos guararapes</p>
-                        </div>
-                        <div id="especialidades">
-                            <h3>Especialidades</h3>
+        <h2 class="titulo-secao"> Quem somos</h2>
 
-                            <ul id="lista">
-                                <li>Cabelo</li>
-                                <li>Lash Lift</li>
-                                <li>Maquiagem</li>
-                                <li>Unhas em gel</li>
-                                <li>Design brown</li>
-                            </ul>
-                        </div>
-                         
-                            <img src="assets/img/galeria/img-mapa.png" alt="" id="map">
-                    </div>
-                </footer>
-            </d>
+        <div class="descricao">
+
+            <p class="P">Somos Ely's, um centro de beleza completo com mais de uma década de tradição e inovação.
+                Somos especialistas em coloração, cortes, tratamentos capilares e visagismo.
+                Atuamos com profissionais experientes, apaixonados pelo que fazem e comprometidos com resultados
+                personalizados e impecáveis.
+                Nosso compromisso é elevar a autoestima de cada cliente, com um atendimento que combina técnica,
+                sensibilidade e os melhores produtos do mercado.
+            </p>
+
+        </div>
+        <img src="assets/img/galeria/image-cabelo.png" alt="imagem de corde de cabelo" class="img-info">
+    </section>
+
+    <section class="galeria" >
+        <h1>Galeria</h1>
+        <div class="fotos">
+            <img src="assets/fotos/image1.png" alt="" class="img-galeria">
+            <img src="assets/fotos/image2.png" alt="" class="img-galeria">
+            <img src="assets/fotos/image3.png" alt="" class="img-galeria">
+            <img src="assets/fotos/image1.png" alt="" class="img-galeria">
+            <img src="assets/fotos/image4.png" alt="" class="img-galeria">
+            <img src="assets/fotos/image5.png" alt="" class="img-galeria">
+            <img src="assets/fotos/image6.png" alt="" class="img-galeria">
+            <img src="assets/fotos/image7.png" alt="" class="img-galeria">
+            <img src="assets/fotos/image8.png" alt="" class="img-galeria">
+        </div>
+    </section>
+
+
+    <footer id="footer">
+
+        <div class="atendimento">
+            <img src="assets/img/logo/logo.png" alt="">
+            <h3>Atendimento <br>De 9h ás 18h <br> Terça a Sábado</h3>
+            <p>Telefone: <a href="tel:+5581999999999">(81) 99999-9999</a></p>
+            <p>Email: <a href="">salao@gmail.com</a></p>
+        </div>
+
+        <div class="endereco">
+            <h3>Endereço</h3>
+            <p>Av. Bernado vieira de Melo, <br> n&deg.4099, Piedade - <br>Jaboatão dos guararapes</p>
+        </div>
+
+        <div class="especialidade">
+            <h3>Especialidades</h3>
+
+            <ul id="lista">
+                <li>Cabelo</li>
+                <li>Lash Lift</li>
+                <li>Maquiagem</li>
+                <li>Unhas em gel</li>
+                <li>Design brown</li>
+            </ul>
+        </div>
+        <img src="assets/img/galeria/img-mapa.png" alt="" class="map">
+
+
+    </footer>
+
+
+
 
 </body>
+<script src="script.js"></script>
 
 </html>
