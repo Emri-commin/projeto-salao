@@ -112,6 +112,10 @@ body {
   pointer-events: none;
 }
 
+.info .att-img {
+  margin-left: 19px;
+}
+
 .secao-info .info {
 
   display: flex;
@@ -139,7 +143,8 @@ body {
   margin-left: 10rem;
   position: relative;
 }
-.secao-bem-vindo h1{
+
+.secao-bem-vindo h1 {
   font-size: 3rem;
 }
 
@@ -175,7 +180,8 @@ body {
   font-size: 20px;
   margin-top: 5rem;
 }
-.secao-procedimento H1{
+
+.secao-procedimento H1 {
   font-size: 3rem
 }
 
@@ -331,9 +337,10 @@ body {
   transform: translateY(-3rem);
 
 }
-.horario h2{
+
+.horario h2 {
   transform: translateY(-5rem);
-   font-weight: 100;
+  font-weight: 100;
 }
 
 .container-agenda {
@@ -353,3 +360,78 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.btn-agendar {
+  width: 20rem;
+  height: 2.3rem;
+  border-radius: 0.8rem;
+  color: white;
+  font-family: var(--fonte-titulos);
+  font-size: 20px;
+  background: linear-gradient(90deg, rgba(162, 84, 8, 1) 50%, rgba(107, 40, 16, 1) 100%);
+  border: none;
+  gap: 5rem;
+  transition: transform 0.3s ease 0.2s;
+}
+
+
+
+
+.btn-agendar:hover {
+  cursor: pointer;
+  transform: translateY(-0.5rem);
+}
+
+.btn-agendar:active {
+  cursor: pointer;
+  transform: translateY(-0.5rem);
+  color: #c7beb5;
+}
+
+/* galeria */
+.galeria {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 25rem;
+  background-color: #c7beb5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column: auto;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  gap: 16rem;
+  color: var(--cor-primaria);
+  background-color: #b39a82;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.footer img {
+  width: 13rem;
+  height: 5rem;
+  transform: translateX(-1rem);
+  pointer-events: none;
+}
+
+.especialidade h1 {
+  transform: translateX(-2rem);
+}
+
+.endereco {}
+
+.especialidade {}
+
+.horarios {}
