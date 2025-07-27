@@ -213,6 +213,7 @@ html {
   justify-content: center;
   width: 100vw;
   margin-top: 5rem;
+
 }
 
 .secao-catalogo img {
@@ -529,7 +530,7 @@ html {
   .secao-catalogo {
     flex-wrap: wrap;
     gap: 2rem;
-    z-index: 2;
+  
   }
 
   .galeria,
@@ -651,7 +652,7 @@ html {
   .btn-agendar {
     width: 100%;
     font-size: 1rem;
-    z-index: 999;
+    
   }
 
   .carrossel {
