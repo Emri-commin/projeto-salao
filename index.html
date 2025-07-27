@@ -4,31 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Salão Ely`s</title>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
-<body>
-
-    <div class="Container">
+<body class="body">
 
 
-        <header class="header">
-            <img src="assets/img/logo/logo.png" alt="">
+    
+    <div class="filtro"></div>
+     <header class="header">
+    
             <nav>
                 <ul class="menu">
-                    <li><a class="nav-link" href="#tt">INICIO</a></li>
-                    <li><a class="nav-link" href="#">SOBRE</a></li>
-                    <li><a class="nav-link" href="#">EQUIPE</a></li>
-                    <li><a class="nav-link" href="#">CONTATO</a></li>
+                    <li><a class="nav-link" id="INICIO">INICIO</a></li> 
+                    <li><a class="nav-link" id="SOBRE" >SOBRE</a></li>
+                    <li><a class="nav-link" id="EQUIPE">EQUIPE</a></li> 
+                    <li><a class="nav-link" id="CONTATO">CONTATO</a></li>
                 </ul>
-
+                <img src="assets/img/logo/logo.png" alt="" class="logo">
             </nav>
 
+            <button class="button-mobile"><img src="assets/img/icons/menu.png" alt=""></button>
+
+               
+             <ul class="menu-mobile">
+                    <li><a class="navli" id="INICIO" onclick="config()">INICIO</a></li> 
+                    <li><a class="navli" id="SOBRE" onclick="config()">SOBRE</a></li>
+                    <li><a class="navli" id="EQUIPE" onclick="config()">EQUIPE</a></li> 
+                    <li><a class="navli" id="CONTATO" onclick="config()">CONTATO</a></li>
+                </ul>
         </header>
+
+    <div class="Container">
+  
+
+       
         <img src="assets/img/banner/Banner.png" alt="" class="Img-banner">
 
         <section class="secao-info">
@@ -51,7 +65,7 @@
         </section>
 
         <section class="secao-bem-vindo">
-            <img src="/assets/img/logo/fachada.png" alt="" class="imgs">
+            <img src="/assets/img/logo/fachada.png" alt="" class="imgs-fachada">
             <div class="div-saudacao">
                 <h1>Bem-vindos</h1>
                 <h2>Aos nossos espaços</h2>
@@ -65,7 +79,7 @@
                             inesquecíveis</strong> conosco e permita-se ser
                         envolvida por uma <strong>experiência única e transformadora.</strong></p>
 
-                    <button class="btn">
+                    <button class="btn-saibaMais">
                         saiba mais
                     </button>
                 </div>
@@ -75,7 +89,7 @@
 
         <section class="secao-procedimento">
             <h1>Procedimentos</h1>
-            <h2>Ative seu modo Elegance</h2>
+            <h2 class="sub">Ative seu modo elegante</h2>
 
             <div class="texto">
                 <p>Mergulhe em uma experiência sublime de <strong>cuidado e luxo,</strong> onde apenas o melhor é
@@ -145,12 +159,13 @@
 
             <div class="horario">
                 <h1>Horário de atendimento</h1>
+                <br>
                 <h2>Agende seu Momento</h2>
 
                 <div class="container-agenda">
                     <div class="div-dia">
-                        <span><i class="fa-solid fa-calendar-days"></i>SEGUNDA À SEXTA </span> <br>
-                        <span><i class="fa-solid fa-calendar-days"></i>SÁBADO </span>
+                        <span><i class="fa-solid fa-calendar-days"></i> SEGUNDA À SEXTA </span> <br>
+                        <span><i class="fa-solid fa-calendar-days"></i> SÁBADO </span>
                     </div>
 
                     <div class="div-horario">
@@ -171,32 +186,32 @@
 
         <footer class="footer">
             <div>
-            <img src="/assets/img/logo/logo.png" alt="">
-            <div class="endereco">
-                <h1>Endereço</h1></span>
-                <h2>Av. Bernado vieira de Melo,n°.4099, <br> Piedade -
-                    Jaboatão dos guararapes</h2> </span>
+                <img src="/assets/img/logo/logo.png" alt="">
+                <div class="endereco">
+                    <h1>Endereço</h1></span>
+                    <h2>Av. Bernado vieira de Melo,n°.4099, <br> Piedade -
+                        Jaboatão dos guararapes</h2> </span>
+                </div>
             </div>
-    </div>
 
 
-    <div class="especialidade">
-        <h1>Especialidade</h1>
-        <h2>Cabelo</h2>
-        <h2>Lash Lift</h2>
-        <h2>Maquiagem</h2>
-        <h2>Unhas em gel</h2>
-        <h2>Design brown</h2>
-    </div>
+            <div class="especialidade">
+                <h1>Especialidade</h1>
+                <h2>Cabelo</h2>
+                <h2>Lash Lift</h2>
+                <h2>Maquiagem</h2>
+                <h2>Unhas em gel</h2>
+                <h2>Design brown</h2>
+            </div>
 
-    <div class="horarios">
-        <h1>Horário de funcionamento</h1>
-        <h2><i class="fa-regular fa-clock"></i>08:00 - 19:00 | Segunda à Sexta</h2>
-        <h2><i class="fa-regular fa-clock"></i> 08:00 - 19:00 | Sábado</h2>
-        <span><i class="fa-solid fa-phone"></i>Telefone: (81) 99999-9999</span> <br> <br>
-        <span><i class="fa-solid fa-envelope"></i>Email: salao@gmail.com</span>
-    </div>
-    </footer>
+            <div class="horarios">
+                <h1>Horário de funcionamento</h1>
+                <h2><i class="fa-regular fa-clock"></i>08:00 - 19:00 | Segunda à Sexta</h2>
+                <h2><i class="fa-regular fa-clock"></i> 08:00 - 19:00 | Sábado</h2>
+                <span><i class="fa-solid fa-phone"></i>Telefone: (81) 99999-9999</span> <br> <br>
+                <span><i class="fa-solid fa-envelope"></i>Email: salao@gmail.com</span>
+            </div>
+        </footer>
 
 
     </div>
