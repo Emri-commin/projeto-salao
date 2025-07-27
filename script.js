@@ -115,6 +115,23 @@ header.style.borderRadius = '0% 0% 0% 0%';
   }
 });
 window.addEventListener('resize', () => {
+  if (window.innerWidth <= 1024) {
+    menu.style.display = "none";
+    buttonMobile.style.display = "none";
+    // location.reload();
+
+       header.style.height = '50px'
+
+header.style.borderRadius = '0% 0% 0% 0%';
+
+  
+  } else {
+    menu.style.display = "flex";
+    
+   
+  }
+});
+window.addEventListener('resize', () => {
   if (window.innerWidth <=  768) {
     menu.style.display = "none";
     buttonMobile.style.display = "block";

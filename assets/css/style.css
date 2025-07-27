@@ -51,6 +51,7 @@ html {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+
 }
 
 /* Secão header */
@@ -213,6 +214,8 @@ html {
   justify-content: center;
   width: 100vw;
   margin-top: 5rem;
+  animation: 20.2s;
+
 
 }
 
@@ -220,7 +223,7 @@ html {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  animation: 1s;
+  animation: 20.2s;
 }
 
 .saudacao button {
@@ -247,18 +250,22 @@ html {
   opacity: 0;
   pointer-events: none;
   animation: alternate 1ms;
+  font-family: "Roboto", sans-serif;
 
 }
 
-.catalogo img:hover {
+/* .aaa:hover span{
   filter: opacity(50%);
+    transition: filter 0.20s ease;
+     filter: blur(2px);
+     
 
 }
 
-.catalogo:hover span {
+.catalogo:hover {
   opacity: 1;
 
-}
+} */
 
 .btn-saibaMais {
   width: 10rem;
@@ -270,6 +277,8 @@ html {
   background: linear-gradient(90deg, rgba(162, 84, 8, 1) 50%, rgba(107, 40, 16, 1) 100%);
   border: none;
   transition: transform 0.3s ease 0.2s;
+  margin-left: 25%;
+
 }
 
 .btn-saibaMais:hover {
@@ -379,6 +388,7 @@ html {
   font-size: 2rem;
   gap: 1rem;
   transform: translateY(-5rem);
+   animation: 20.2s;
 
 }
 
@@ -402,11 +412,14 @@ html {
   background: linear-gradient(90deg, rgba(162, 84, 8, 1) 50%, rgba(107, 40, 16, 1) 100%);
   border: none;
   gap: 5rem;
+    transition: transform 0.3s ease 0.2s;
 }
+
 
 .btn-agendar:hover {
   cursor: pointer;
   transform: translateY(-0.5rem);
+
 }
 
 .btn-agendar:active {
@@ -675,29 +688,29 @@ html {
 
   .btn-saibaMais {
 
-    transform: translateX(-50%);
+    transform: translateX(-82%);
     width: 80%;
   }
 
   .filtro {
-    position: absolute;
+    position:fixed ;
     width: 100%;
-    height: 672vh;
+    height:100%;
+    top: 0%;
     z-index: 1;
-   
   }
 
-  .navli {}
+
 
 
 }
 
 @media (min-width: 776px) {
-
+/* 
   .secao-horario {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   .carrossel {
     width: 200%;
@@ -706,6 +719,7 @@ html {
 
   .button-mobile {
     display: none;
+   
   }
 
   .horario {
@@ -718,10 +732,11 @@ html {
   }
 
   .btn-saibaMais {
-    transform: translateX(-50%);
-    z-index: 99;
+    transform: translateX(50%);
+    
 
   }
+ 
 
 
 
@@ -734,9 +749,14 @@ html {
 
   }
 
-
+  
 }
+@media (min-width: 820px) {
 
+ .btn-saibaMais{
+  transform: translateX(-178%);
+ }
+}
 
 @media (max-width: 480px) {
 
@@ -763,4 +783,11 @@ html {
     font-size: 0.9rem;
     padding: 0.5rem;
   }
+    .filtro {
+  
+
+
+   
+  }
+ 
 }
