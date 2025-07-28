@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+
+}
+body{
+    background-color: rgba(237, 202, 159, 0.121);
+}
+.section-boas-vindas{
+    padding: 30px 10px 50px 10px;
+    color: rgb(141, 87, 20);
+    
+}
+.section-boas-vindas .container{         /*Pai*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section-boas-vindas .container h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+     margin-top: 90px;
+}
+.section-boas-vindas .container .subtitulo-com-linhas{
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+}
+.subtitulo-com-linhas::before,
+    .subtitulo-com-linhas::after {
+        content: '';
+        flex-grow: 1;
+        height: 0.1px;
+        background-color: rgb(141, 87, 20);
+       
+    }
+.section-boas-vindas .container p{
+    font-size: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 1.6; 
+    width: 550px;
+    height: 50px;
+    margin-bottom: 200px;
+    
+}
+
+/*QUEM SOMOS*/
+
+.section-quem-somos .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-left: 10%;
+    color: rgb(141, 87, 20);
+    line-height: 2; 
+    letter-spacing: 1.5px;
+    margin-bottom: 150px;
+}
+.section-quem-somos .container .video{
+    border-radius: 5px;
+    width: 500px;
+}
+.section-quem-somos .coluna-texto h2{
+    font-size: 'Poppins', sans-serif;
+    text-transform: uppercase;
+   
+    
+}
+.section-quem-somos .coluna-texto p{
+    width: 500px;   
+
+}
+.bloco-historia .subtitulo-com-linhas2{
+   
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.bloco-historia .subtitulo-com-linhas2::before{
+    content: '';
+    flex-grow: 1;
+    height: 0.1px;
+    background-color: rgb(141, 87, 20);
+}
+
+/*Diferenciais*/
+.section-diferencas .container h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 40px;
+    gap: 10px;
+    color: rgb(141, 87, 20);
+    padding-bottom: 30px;
+     letter-spacing: 1.5px;
+   
+}
+.section-diferencas .container h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 'Poppins', sans-serif;
+    color: rgb(141, 87, 20);
+    width: 970px;
+     letter-spacing: 1.5px;
+    padding-left: 650px;
+}
+.section-diferencas .container h3::before{
+    content: ' ';
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgb(141, 87, 20);
+}
+.diferenciais-layout {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    margin-top: 40px;
+}
+.cards-container {
+    flex: 1; /* Faz esta coluna ocupar 50% do espaço */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: rgb(141, 87, 20);
+}
+.card {
+    flex-basis: calc(50% - 10px); /* Ajustado para 2 colunas de cards dentro da coluna principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.imagem-destaque-container {
+    flex: 1; /* Faz esta coluna ocupar os outros 50% do espaço */
+}
+
+.img-atendimento {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+}
+.diferenciais-layout {
+    display: flex;
+    align-items: center; 
+    gap: 30px;
+    margin-top: 40px;
+}
+.cards-container {
+    flex: 1; /* Faz esta coluna ocupar 50% do espaço */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: rgb(141, 87, 20);
+}
+.card {
+    flex-basis: calc(50% - 10px); /* Ajustado para 2 colunas de cards dentro da coluna principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.imagem-destaque-container {
+    flex: 1;
+}
+
+.img-atendimento {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Responsividade --- */
+@media (max-width: 992px) {
+    /* Em telas menores, o layout principal empilha */
+    .diferenciais-layout {
+        flex-direction: column;
+    }
+}
+
