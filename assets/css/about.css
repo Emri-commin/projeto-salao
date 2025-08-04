@@ -6,98 +6,133 @@
     text-decoration: none;
 
 }
-body{
+
+.banner {
     background-color: rgba(237, 202, 159, 0.121);
+    background-image: url(/assets/fotos/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
 }
-.section-boas-vindas{
+
+.section-boas-vindas {
     padding: 30px 10px 50px 10px;
-    color: rgb(141, 87, 20);
-    
+    color: #c58a49;
 }
-.section-boas-vindas .container{         /*Pai*/
+
+.section-boas-vindas .container {
+    /*Pai*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.section-boas-vindas .container h1{
+
+.section-boas-vindas .container h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-     margin-top: 90px;
+    margin-top: 90px;
 }
-.section-boas-vindas .container .subtitulo-com-linhas{
+
+.section-boas-vindas .container .subtitulo-com-linhas {
     letter-spacing: 1.5px;
     display: flex;
     align-items: center;
     gap: 10px;
     width: 40%;
 }
+
 .subtitulo-com-linhas::before,
-    .subtitulo-com-linhas::after {
-        content: '';
-        flex-grow: 1;
-        height: 0.1px;
-        background-color: rgb(141, 87, 20);
-       
-    }
-.section-boas-vindas .container p{
+.subtitulo-com-linhas::after {
+    content: '';
+    flex-grow: 1;
+    height: 0.1px;
+    background-color: #c58a49;;
+
+}
+
+.section-boas-vindas .container p {
     font-size: 'Poppins', sans-serif;
     font-size: 16px;
     letter-spacing: 1.5px;
     text-align: center;
-    line-height: 1.6; 
+    line-height: 1.6;
     width: 550px;
     height: 50px;
     margin-bottom: 200px;
-    
+
 }
 
 /*QUEM SOMOS*/
 
-.section-quem-somos .container{
+.section-quem-somos .container {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     padding-left: 10%;
-    color: rgb(141, 87, 20);
-    line-height: 2; 
+    color: #c58a49;;
+    line-height: 2;
     letter-spacing: 1.5px;
     margin-bottom: 150px;
 }
-.section-quem-somos .container .video{
+
+.section-quem-somos .container .video {
     border-radius: 5px;
-    width: 500px;
+    max-width: 40% ; 
+    height: auto;
+    opacity: 100%;
 }
-.section-quem-somos .coluna-texto h2{
+
+.section-quem-somos .coluna-texto h2 {
     font-size: 'Poppins', sans-serif;
     text-transform: uppercase;
-   
-    
-}
-.section-quem-somos .coluna-texto p{
-    width: 500px;   
+
 
 }
-.bloco-historia .subtitulo-com-linhas2{
-   
+
+.section-quem-somos .coluna-texto p {
+    width: 500px;
+
+}
+
+.bloco-historia .subtitulo-com-linhas2 {
+
     display: flex;
     align-items: center;
     gap: 10px;
     width: 100%;
 }
-.bloco-historia .subtitulo-com-linhas2::before{
+
+.bloco-historia .subtitulo-com-linhas2::before {
     content: '';
     flex-grow: 1;
     height: 0.1px;
-    background-color: rgb(141, 87, 20);
+    background-color: #c58a49;;
+}
+button{
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    
+}
+.btn-agenda-horario{
+    background-color: #c58a49;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    
 }
 
 /*Diferenciais*/
-.section-diferencas .container h2{
+.section-diferencas .container h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,42 +140,42 @@ body{
     text-transform: uppercase;
     padding-top: 40px;
     gap: 10px;
-    color: rgb(141, 87, 20);
+    color: #c58a49;;
     padding-bottom: 30px;
-     letter-spacing: 1.5px;
-   
+    letter-spacing: 1.5px;
+
 }
-.section-diferencas .container h3{
+
+.section-diferencas .container h3 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 'Poppins', sans-serif;
-    color: rgb(141, 87, 20);
+    color: #c58a49;;
     width: 970px;
-     letter-spacing: 1.5px;
+    letter-spacing: 1.5px;
     padding-left: 650px;
 }
-.section-diferencas .container h3::before{
+
+.section-diferencas .container h3::before {
     content: ' ';
     flex-grow: 1;
     height: 1px;
-    background-color: rgb(141, 87, 20);
+    background-color: #c58a49;;
 }
-.diferenciais-layout {
-    display: flex;
-    align-items: center;
-    gap: 30px; 
-    margin-top: 40px;
-}
+
 .cards-container {
-    flex: 1; /* Faz esta coluna ocupar 50% do espaço */
+    flex: 1;
+    /* Faz esta coluna ocupar 50% do espaço */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    color: rgb(141, 87, 20);
+    color: #c58a49;;
 }
+
 .card {
-    flex-basis: calc(50% - 10px); /* Ajustado para 2 colunas de cards dentro da coluna principal */
+    flex-basis: calc(50% - 10px);
+    /* Ajustado para 2 colunas de cards dentro da coluna principal */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,30 +187,37 @@ body{
     height: 60px;
     margin-bottom: 10px;
 }
+
 .imagem-destaque-container {
-    flex: 1; /* Faz esta coluna ocupar os outros 50% do espaço */
+    flex: 1;
+    /* Faz esta coluna ocupar os outros 50% do espaço */
 }
 
 .img-atendimento {
-    width: 100%; 
+    width: 100%;
     height: auto;
     border-radius: 8px;
 }
+
 .diferenciais-layout {
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 30px;
     margin-top: 40px;
 }
+
 .cards-container {
-    flex: 1; /* Faz esta coluna ocupar 50% do espaço */
+    flex: 1;
+    /* Faz esta coluna ocupar 50% do espaço */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     color: rgb(141, 87, 20);
 }
+
 .card {
-    flex-basis: calc(50% - 10px); /* Ajustado para 2 colunas de cards dentro da coluna principal */
+    flex-basis: calc(50% - 10px);
+    /* Ajustado para 2 colunas de cards dentro da coluna principal */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,21 +248,11 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* --- Responsividade --- */
 @media (max-width: 992px) {
+
     /* Em telas menores, o layout principal empilha */
     .diferenciais-layout {
         flex-direction: column;
     }
 }
-
