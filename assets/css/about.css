@@ -8,7 +8,6 @@
 }
 
 .banner {
-    background-color: rgba(237, 202, 159, 0.121);
     background-image: url(/assets/fotos/banner.jpg);
     background-size: cover;
     background-position: center;
@@ -53,7 +52,8 @@
     content: '';
     flex-grow: 1;
     height: 0.1px;
-    background-color: #c58a49;;
+    background-color: #c58a49;
+    ;
 
 }
 
@@ -65,7 +65,7 @@
     line-height: 1.6;
     width: 550px;
     height: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
 }
 
@@ -73,18 +73,19 @@
 
 .section-quem-somos .container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
     padding-left: 10%;
-    color: #c58a49;;
-    line-height: 2;
+    gap: 50px;
+    color: #c58a49;
     letter-spacing: 1.5px;
+
+    line-height: 2;
     margin-bottom: 150px;
+
 }
 
 .section-quem-somos .container .video {
     border-radius: 5px;
-    max-width: 40% ; 
+    width: 40%;
     height: auto;
     opacity: 100%;
 }
@@ -92,58 +93,59 @@
 .section-quem-somos .coluna-texto h2 {
     font-size: 'Poppins', sans-serif;
     text-transform: uppercase;
-
-
 }
 
-.section-quem-somos .coluna-texto p {
-    width: 500px;
 
-}
 
 .bloco-historia .subtitulo-com-linhas2 {
 
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 100%;
+    width: 350px;
 }
 
 .bloco-historia .subtitulo-com-linhas2::before {
     content: '';
     flex-grow: 1;
     height: 0.1px;
-    background-color: #c58a49;;
-}
-button{
-    margin-top: 30px;
-    margin-left: 30px;
-    cursor: pointer;
-    
-}
-.btn-agenda-horario{
     background-color: #c58a49;
+    ;
+}
+.section-quem-somos p{
+    width: 500px;
+}
+
+button {
+    margin-top: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+
+}
+
+.btn-agenda-horario {
+    background:linear-gradient(#c58a49 10%, black 100%) ;
     color: aliceblue;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 300px;
-    height: 30px;
-    
+    height: 40px;
+
 }
 
 /*Diferenciais*/
-.section-diferencas .container h2 {
+.section-diferencas .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    padding-top: 40px;
-    gap: 10px;
-    color: #c58a49;;
-    padding-bottom: 30px;
-    letter-spacing: 1.5px;
+}
 
+.section-diferencas .container h2 {
+    text-transform: uppercase;
+    color: #c58a49;
+    font-size: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
 }
 
 .section-diferencas .container h3 {
@@ -151,17 +153,18 @@ button{
     justify-content: center;
     align-items: center;
     font-size: 'Poppins', sans-serif;
-    color: #c58a49;;
-    width: 970px;
+    color: #c58a49;
+    ;
     letter-spacing: 1.5px;
-    padding-left: 650px;
+    padding-left: 50px;
 }
 
 .section-diferencas .container h3::before {
     content: ' ';
     flex-grow: 1;
     height: 1px;
-    background-color: #c58a49;;
+    background-color: #c58a49;
+    ;
 }
 
 .cards-container {
@@ -170,7 +173,8 @@ button{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    color: #c58a49;;
+    color: #c58a49;
+    ;
 }
 
 .card {
@@ -204,6 +208,7 @@ button{
     align-items: center;
     gap: 30px;
     margin-top: 40px;
+
 }
 
 .cards-container {
@@ -213,6 +218,7 @@ button{
     flex-wrap: wrap;
     gap: 20px;
     color: rgb(141, 87, 20);
+
 }
 
 .card {
@@ -243,16 +249,119 @@ button{
 
 
 
-
-
-
-
+/* =================================================== */
+/* MEDIA QUERIES (Telas menores)              */
+/* =================================================== */
 
 /* --- Responsividade --- */
-@media (max-width: 992px) {
-
-    /* Em telas menores, o layout principal empilha */
-    .diferenciais-layout {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .banner {
+        width: 100vh;
     }
+
+    .section-quem-somos .container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 100px;
+        padding-left: 0;
+    }
+    .section-quem-somos .container p{
+        width: 700px;
+    }
+
+    .section-quem-somos .container .video {
+        width: 70%;
+        padding-left: 20px;
+    }
+
+    .section-quem-somos .titulo-subtitulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-quem-somos .descripition {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 'Poppins', sans-serif;
+
+        text-align: center;
+        width: 100%;
+        padding-top: 20px;
+
+
+
+    }
+
+    .section-quem-somos .container .subtitulo-com-linhas2 {
+
+        box-sizing: border-box;
+        width: 350px;
+        display: flex;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .diferenciais-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .imagem-destaque-container {
+        padding-left: 80px;
+    }
+
+    .section-diferencas .container h3 {
+        box-sizing: border-box;
+        width: 250px;
+        display: flex;
+
+        font-size: 'Poppins', sans-serif;
+        color: #c58a49;
+        ;
+        letter-spacing: 1.5px;
+        padding-left: 50px;
+
+    }
+
+    .section-diferencas .container h3::before {
+        content: ' ';
+        flex-grow: 1;
+        height: 1px;
+        background-color: #c58a49;
+        ;
+    }
+
+
 }
